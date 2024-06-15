@@ -1,0 +1,24 @@
+.title {
+    font-size: 5rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.paragraph {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 0;
+    margin: 1rem;
+}
+
+.button {
+    margin: 1rem;
+    padding: 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #8d0707;
+    border-radius: .5rem;
+    border: 0 none;
+    box-shadow: .2rem .2rem .5rem rgba(13, 13, 13, 0.22);
+}
