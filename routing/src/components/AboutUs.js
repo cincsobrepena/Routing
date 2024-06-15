@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './Pages.module.css';
+import NavBar from './NavigationBar';
 
 function AboutUs() {
   return (
     <>
+      <NavBar />
       <h2 className={styles.title}>DOTA 2</h2>
       <p className={styles.paragraph}>   
           Dota 2 is a complex multiplayer online battle arena (MOBA) game by Valve Corporation. Two teams of five players each choose from a roster of over a hundred heroes, each with unique abilities and roles. The goal is to destroy the enemy’s Ancient, a structure located in their base, by navigating the map, engaging in combat, and working strategically as a team.

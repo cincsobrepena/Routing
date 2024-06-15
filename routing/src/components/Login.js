@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import styles from './Login.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const users = [
   { username: 'user1', password: 'pass1' },
   { username: 'user2', password: 'pass2' },
 ];
 
-function Login({ onLogin }) {
+function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = users.find(user => user.username === username && user.password === password);
     if (user) {
-      onLogin();
+      navigate('/home');
     } else {
       setError('Invalid username or password');
     }
